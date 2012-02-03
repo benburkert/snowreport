@@ -24,7 +24,7 @@ class SnowReport < Sinatra::Base
       message = "#{conditions['newSnow']}\" of new snow today\n"
       message << "#{conditions['last48Hours']}\" of new snow in the last two days\n"
       message << "#{conditions['last7Days']}\" of new snow in the last week\n"
-      message << "#{conditions['midMountainBase']}' mountain base\n\n"
+      message << "#{conditions['midMountainBase']}\" mountain base\n\n"
 
       message << conditions['weatherForecast'].map {|data| forcast(data) }.join("\n")
 
